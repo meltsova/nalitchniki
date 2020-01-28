@@ -28,7 +28,6 @@ function showRandomHouse () {
         house.Label.Window.forEach(
         function(window) {
         var window_geo = window.geometry;
-        console.debug(nalitchnik_bbox);
         var window_width =  window_geo[1].x - window_geo[0].x;
         var scale_x = window_width / nalitchnik_bbox.width;
         var window_height =  window_geo[3].y - window_geo[0].y;
