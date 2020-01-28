@@ -13,7 +13,7 @@ function showRandomHouse () {
     var canvas = document.getElementById("canvasObj");
     var ctx = canvas.getContext('2d');
 
-    var nalitchnik = nalitchniki[Math.floor(Math.random()*houses.length)];
+    var nalitchnik = nalitchniki[Math.floor(Math.random()*nalitchniki.length)];
     var nalitchnik_bbox = nalitchnik.Label.objects[0].bbox;
     var house = houses[Math.floor(Math.random()*houses.length)];
 
