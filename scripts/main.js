@@ -1,5 +1,5 @@
-$.getJSON('../data/nalitchniki.json', function(nalitchniki) {
-    $.getJSON('../data/houses.json', function(houses) {
+$.getJSON('data/nalitchniki.json', function(nalitchniki) {
+    $.getJSON('data/houses.json', function(houses) {
         var canvas = document.getElementById("canvasObj");
         var ctx = canvas.getContext('2d');
 
