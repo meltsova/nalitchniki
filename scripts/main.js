@@ -40,11 +40,6 @@ function showRandomHouse () {
                 img_nalitchnik.width * scale_x,
                 img_nalitchnik.height * scale_y
             );
-
-            var image = new Image();
-            image.id = "resultImage";
-            image.src = canvas.toDataURL();
-            document.getElementById('mainContent').appendChild(image);
         }
     )
     }
