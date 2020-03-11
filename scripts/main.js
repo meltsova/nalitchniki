@@ -26,20 +26,25 @@ function showRandomHouse () {
     var img_nalitchnik = new Image();
     img_nalitchnik.onload = function() {
         house.Label.Window.forEach(
-        function(window) {
-        var window_geo = window.geometry;
-        var window_width =  window_geo[1].x - window_geo[0].x;
-        var scale_x = window_width / nalitchnik_bbox.width;
-        var window_height =  window_geo[3].y - window_geo[0].y;
-        var scale_y = window_height / nalitchnik_bbox.height;
+            function(window) {
+            var window_geo = window.geometry;
+            var window_width =  window_geo[1].x - window_geo[0].x;
+            var scale_x = window_width / nalitchnik_bbox.width;
+            var window_height =  window_geo[3].y - window_geo[0].y;
+            var scale_y = window_height / nalitchnik_bbox.height;
 
-        ctx.drawImage(
-            img_nalitchnik,
-            window_geo[0].x - (nalitchnik_bbox.left * scale_x),
-            window_geo[0].y - (nalitchnik_bbox.top * scale_y),
-            img_nalitchnik.width * scale_x,
-            img_nalitchnik.height * scale_y
-        );
+            ctx.drawImage(
+                img_nalitchnik,
+                window_geo[0].x - (nalitchnik_bbox.left * scale_x),
+                window_geo[0].y - (nalitchnik_bbox.top * scale_y),
+                img_nalitchnik.width * scale_x,
+                img_nalitchnik.height * scale_y
+            );
+
+            var image = new Image();
+            image.id = "resultImage";
+            image.src = canvas.toDataURL();
+            document.getElementById('mainContent').appendChild(image);
         }
     )
     }
