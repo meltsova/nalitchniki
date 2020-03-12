@@ -24,6 +24,7 @@ body {
 .footer-text {
     color: rgb(182, 178, 178);
     font-size: 14px;
+    font-weight: 500;
     text-align: left;
     margin: auto 15px;  
 }
