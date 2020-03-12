@@ -21,7 +21,8 @@ body {
   }
 
   .footer-text {
-    color: rgb(58, 54, 54);
+    color: rgb(182, 178, 178);
     font-size: 14px;
+    text-align: left;
     margin: auto;  
   }
