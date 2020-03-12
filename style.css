@@ -1,17 +1,13 @@
 #canvasObj {
     width: 60%;
+    display: flex;
+    margin: 0 auto 0;
 }
 
 body {
     margin: 0;
 }
 
-.content {
-    width: 100%;
-    height: 100%;
-    background-color: magenta;
-    display: flex;
-}
 
 .footer {
     height: 300px;
