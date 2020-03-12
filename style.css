@@ -14,8 +14,14 @@ body {
     display: flex;
   }
   
-.footer-author {
+.footer-name {
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     margin: auto;
+  }
+
+  .footer-text {
+    color: rgb(58, 54, 54);
+    font-size: 14px;
+    margin: auto;  
   }
